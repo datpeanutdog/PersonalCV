@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    body {
+        background-image: url("../images/skyblue.jpg");
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #cfecf7;
+    padding: 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        }
+
+.head {
+    background: 	#a0d9ef;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card {
+    background: 	#a0d9ef;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            
+h1 {
+text-align: center;
+margin-bottom: 10px;
+}
+
+h2 {
+margin-bottom: 10px;
+margin-top: 20px;
+}
+
+p {
+margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    }
+
+a {
+    text-decoration: none;
+    color: #0077cc;
+    }
+        
+a:hover {
+    color: #005fa3;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        }
+        th, td {
+        border: 1px solid #000000;
+        padding: 8px;
+        }
+        th {
+        background-color: #62c1e5;
+        color: rgba(0, 0, 0, 0.945);
+        }
+        td {
+        background-color: #ffffff;
+        color: rgba(0, 0, 0, 0.945);
+        }
+
+form {
+display: flex;
+flex-direction: column;
+gap: 1px;
+}
+
+Input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    button {
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+    button:hover {
+    background-color: #005fa3;
+    }
+
+footer {
+    color: black;
+    padding: 10px;
+}
