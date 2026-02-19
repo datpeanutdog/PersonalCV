@@ -4,7 +4,6 @@
     padding: 0;
     }
     body {
-        background-image: url("../images/skyblue.jpg");
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #cfecf7;
@@ -108,3 +107,32 @@ footer {
     color: black;
     padding: 10px;
 }
+
+.dark-mode {
+    background-color:#222;
+    color:white;
+    }
+.dark-mode .card{
+    background-color:#979393;
+    color:white;
+    }
+.dark-mode h1{
+    background-color:#222;
+    color:white;
+    }
+.dark-mode h2{
+    background-color:#222;
+    color:white;
+    }
+.dark-mode .head{
+    background-color:#222;
+    color:white;
+    }
+.dark-mode th{
+    background-color:#222;
+    color:white;
+    }
+
+.hidden {
+    display:none;
+    }

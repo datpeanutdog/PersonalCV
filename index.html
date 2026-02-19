@@ -1,99 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Personal Online CV</title>
-<head>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<header>
-<section class="head">
-<h1> Joshlie Daven G. Miralles</h1>
-<p> IT Student | Web Systems and Technologies </p>
-</header>
-<main>
-  <div class="container">
-<section class="card">
-<h2>About Me</h2>
-<img src="profile.jpg" alt="Profile photo">
-<p> Hello! I am Joshlie Daven G. Miralles, I live in Centro Kolambog Lapasan Cagayan De Oro city and I am 20 years old.</p>
-<p1>I love playing computer games and hangout with friends</p1>
-</section>
-<section class="card">
-<p>Email:
-<a href="mailto:joshliedavenmiralles@gmail.com">joshliedavenmiralles@gmail.com</a><br>
-GitHub:
-<a href="https://github.com/datpeanutdog" target="_blank">github.com/datpeanutdog</a>
-</p>
-</section>
-<section class="card">
-<h2>Skills</h2>
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-</ul>
 
-<h2>Web Development</h2>
-<ul>
-  <li>Frontend
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-  </li>
-  <li>Backend (Basic)</li>
-</ul>
-</section>
-<section class="card">
-<h2>Education</h2>
-<table>
-<tr>
-  <th>Program</th>
-  <th>Institution</th>
-  <th>Year Graduated</th>
-</tr>
-<tr>
-  <td>College</td>
-  <td>USTP – CDO Campus</td>
-  <td>2024 - Present</td>
-</tr>
-<tr>
-  <td>Senior High</td>
-  <td>USTP - Senior High</td>
-  <td>2022 - 2024</td>
-</tr>
-<tr>
-  <td>Junior High</td>
-  <td>Corpus Christi School</td>
-  <td>2018 - 2022</td>
-</tr>
-<tr>
-  <td>Grade School</td>
-  <td>Corpus Christi School</td>
-  <td>2012 - 2018</td>
-</tr>
-<tr>
-  <td>Kinder</td>
-  <td>East City Central</td>
-  <td>2009 - 2012</td>
-  </tr>
-</table>
-</section>
-<section class="card">
-<h2>Contact Me</h2>
-<form>
-<label for="name">Name:</label><br>
-<input type="text" placeholder="Name"><br><br>
-<label for="email">Email:</label><br>
-<input type="email" placeholder="Email"><br><br>
-<label for="message">Message:</label><br>
-<textarea placeholder="Message"></textarea><br><br>
-<button type="submit">Send</button>
-</form>
-</section>
-<footer>
-  <p>&copy; 2026 Your Name. All rights reserved. </p>
-  </footer>
-</div>
-</main>
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Online CV</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <button id="themeToggle">Toggle Dark Mode</button>
+
+        <section class="head">
+            <h1>Joshlie Daven G. Miralles</h1>
+            <p>IT Student | Web Systems and Technologies</p>
+        </section>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="profile.jpg" alt="Profile photo">
+                <p>
+                    Hello! I am Joshlie Daven G. Miralles. 
+                    I live in Centro Kolambog, Lapasan, Cagayan de Oro City 
+                    and I am 20 years old.
+                </p>
+                <p>
+                    I love playing computer games and hanging out with friends.
+                </p>
+            </section>
+
+            <section class="card">
+                <p>
+                    Email:
+                    <a href="mailto:joshliedavenmiralles@gmail.com">
+                        joshliedavenmiralles@gmail.com
+                    </a>
+                    <br>
+                    GitHub:
+                    <a href="https://github.com/datpeanutdog" target="_blank">
+                        github.com/datpeanutdog
+                    </a>
+                </p>
+            </section>
+            <button id="toggleSkills">Show/Hide Skills</button>
+            <section class="card" id="skillsSection">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <h2>Web Development</h2>
+                <ul>
+                    <li>
+                        Frontend
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>Backend (Basic)</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Education</h2>
+                <table>
+                    <tr>
+                        <th>Program</th>
+                        <th>Institution</th>
+                        <th>Year Graduated</th>
+                    </tr>
+                    <tr>
+                        <td>College</td>
+                        <td>USTP – CDO Campus</td>
+                        <td>2024 - Present</td>
+                    </tr>
+                    <tr>
+                        <td>Senior High</td>
+                        <td>USTP - Senior High</td>
+                        <td>2022 - 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Junior High</td>
+                        <td>Corpus Christi School</td>
+                        <td>2018 - 2022</td>
+                    </tr>
+                    <tr>
+                        <td>Grade School</td>
+                        <td>Corpus Christi School</td>
+                        <td>2012 - 2018</td>
+                    </tr>
+                    <tr>
+                        <td>Kinder</td>
+                        <td>East City Central</td>
+                        <td>2009 - 2012</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="card">
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" placeholder="Name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" placeholder="Email"><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" placeholder="Message"></textarea><br><br>
+
+                    <button type="submit" id="submitBtn">Send</button>
+                </form>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Joshlie Daven G. Miralles. All rights reserved.</p>
+            </footer>
+
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
 </html>
