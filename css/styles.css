@@ -117,15 +117,15 @@ footer {
     color:white;
     }
 .dark-mode h1{
-    background-color:#222;
+    background-color:#979393;
     color:white;
     }
 .dark-mode h2{
-    background-color:#222;
+    background-color:#979393;
     color:white;
     }
 .dark-mode .head{
-    background-color:#222;
+    background-color:#979393;
     color:white;
     }
 .dark-mode th{
@@ -136,3 +136,47 @@ footer {
 .hidden {
     display:none;
     }
+
+
+.card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.card form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.card form input,
+.card form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+.card form textarea {
+    height: 40px;     
+    resize: none;    
+}
+
+#submitBtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1877b5;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: #145a8a;
+}
