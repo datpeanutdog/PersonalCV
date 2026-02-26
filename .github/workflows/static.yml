@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: personal-cv-react # adjust if your folder name is different
+        working-directory: personal-cv-react
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -40,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist  # use 'build' if using CRA
+          path: dist   # change to 'build' if using CRA
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
