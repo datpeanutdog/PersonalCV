@@ -17,15 +17,13 @@
 
 .head {
     background: 	#a0d9ef;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-    width: 800px;
-    margin-right: auto;
-    margin-left: auto;
-}
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            }
+
 
 .card {
     background: 	#a0d9ef;
@@ -180,4 +178,3 @@ footer {
 #submitBtn:hover {
     background-color: #145a8a;
 }
-
