@@ -16,7 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: personal-cv-react # change if your folder name is different
+        # This ensures all 'run' commands happen inside your subfolder
+        working-directory: personal-cv-react 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,7 +27,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: package-lock.json # fixed path
+          cache-dependency-path: personal-cv-react/package-lock.json
 
       - name: Install dependencies
         run: npm install
@@ -40,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build   # Use 'dist' if using Vite instead of CRA
+          path: personal-cv-react/build
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
