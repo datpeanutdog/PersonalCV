@@ -12,11 +12,11 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: personal-cv-react
+        working-directory: personal-cv-react # change if your folder name is different
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: package-lock.json
+          cache-dependency-path: package-lock.json # fixed path
 
       - name: Install dependencies
         run: npm install
@@ -40,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist   # change to 'build' if using CRA
+          path: build   # Use 'dist' if using Vite instead of CRA
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
