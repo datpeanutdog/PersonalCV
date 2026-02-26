@@ -1,3 +1,10 @@
+To get this working, we need to determine if your project uses Vite or Create React App (CRA). Since the previous attempt failed to find the /build folder, it is highly likely you are using Vite, which outputs to a folder named /dist.
+
+Here is the full, corrected YAML. I have commented on the specific line you might need to flip depending on your project type.
+
+Full deploy.yml
+YAML
+
 name: Deploy React App to GitHub Pages
 
 on:
@@ -16,8 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        # This ensures all 'run' commands happen inside your subfolder
-        working-directory: personal-cv-react 
+  
+        working-directory: personal-cv-react
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,6 +34,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
+
           cache-dependency-path: personal-cv-react/package-lock.json
 
       - name: Install dependencies
@@ -41,7 +49,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: personal-cv-react/build
+
+          path: personal-cv-react/dist
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
