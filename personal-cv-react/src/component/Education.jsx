@@ -1,39 +1,30 @@
-function Education() {
-    return (<section class="card">
-                <h2>Education</h2>
-                <table>
-                    <tr>
-                        <th>Program</th>
-                        <th>Institution</th>
-                        <th>Year Graduated</th>
+import Card from "./Card";
+function Education({ education }) {
+
+    if (!education) return null;
+
+    return (
+        <Card title="Education">
+            <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '10px' }}>
+                <thead>
+                    <tr style={{ backgroundColor: '#7dd3f7' }}> 
+                        <th style={{ border: '1px solid #000', padding: '10px', textAlign: 'left' }}>Program</th>
+                        <th style={{ border: '1px solid #000', padding: '10px', textAlign: 'left' }}>Institution</th>
+                        <th style={{ border: '1px solid #000', padding: '10px', textAlign: 'left' }}>Year</th>
                     </tr>
-                    <tr>
-                        <td>College</td>
-                        <td>USTP – CDO Campus</td>
-                        <td>2024 - Present</td>
-                    </tr>
-                    <tr>
-                        <td>Senior High</td>
-                        <td>USTP - Senior High</td>
-                        <td>2022 - 2024</td>
-                    </tr>
-                    <tr>
-                        <td>Junior High</td>
-                        <td>Corpus Christi School</td>
-                        <td>2018 - 2022</td>
-                    </tr>
-                    <tr>
-                        <td>Grade School</td>
-                        <td>Corpus Christi School</td>
-                        <td>2012 - 2018</td>
-                    </tr>
-                    <tr>
-                        <td>Kinder</td>
-                        <td>East City Central</td>
-                        <td>2009 - 2012</td>
-                    </tr>
-                </table>
-            </section>);
-} 
+                </thead>
+                <tbody>
+                    {education.map((item, index) => (
+                        <tr key={index} style={{ backgroundColor: 'white' }}>
+                            <td style={{ border: '1px solid #000', padding: '10px' }}>{item.Program}</td>
+                            <td style={{ border: '1px solid #000', padding: '10px' }}>{item.Institution}</td>
+                            <td style={{ border: '1px solid #000', padding: '10px' }}>{item.Year}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </Card>
+    );
+}
 
 export default Education;
